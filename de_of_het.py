@@ -3,14 +3,14 @@ def de_or_het(noun):
 	noun = noun.lower()
 
 	# we have an excel files saved as csv, that contain words that are definately het-words
-	with open('het_woorden.csv', 'r') as csv:
-		het_woorden = csv.read().split('\r')
+	with open('het_woorden', 'r') as f:
+		het_woorden = f.read().split('\r')
 
 	het_woorden = [w.lower() for w in het_woorden]	
 
 	# and we have an excel file that contains dubious words
-	with open('ambiguous_nouns.csv', 'r') as csv:
-		ambiguous_nouns = csv.read().split('\r')
+	with open('ambiguous_nouns', 'r') as f:
+		ambiguous_nouns = f.read().split('\r')
 
 	ambiguous_nouns = [w.lower() for w in ambiguous_nouns]	
 	message = """\nYour noun may be either a 'de' or a 'het' word. Chosing one or the
