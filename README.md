@@ -15,7 +15,6 @@ These rules include, but are not limited to:
 	- numbers and ordinals ('de een, de eerste')
 	- rivers ('de Maas')
 	- fruit & vegetables ('de appel', 'de broccoli')
-	- 
 
 * for 'het':
 	- diminutives (singular form only)
