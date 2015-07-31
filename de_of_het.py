@@ -4,14 +4,14 @@ def de_or_het(noun):
 
 	# we have an excel files saved as csv, that contain words that are definately het-words
 	with open('het_woorden', 'r') as f:
-		het_woorden = f.read().split('\r')
+		het_woorden = f.read().split('\n')
 
 	het_woorden = [w.lower() for w in het_woorden]	
 	print het_woorden[:20]
 	
 	# and we have an excel file that contains dubious words
 	with open('ambiguous_nouns', 'r') as f:
-		ambiguous_nouns = f.read().split('\r')
+		ambiguous_nouns = f.read().split('\n')
 	
 	ambiguous_nouns = [w.lower() for w in ambiguous_nouns]	
 	print ambiguous_nouns
