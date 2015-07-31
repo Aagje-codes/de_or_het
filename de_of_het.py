@@ -7,14 +7,13 @@ def de_or_het(noun):
 		het_woorden = f.read().split('\n')
 
 	het_woorden = [w.lower() for w in het_woorden]	
-	print het_woorden[:20]
+
 	
 	# and we have an excel file that contains dubious words
 	with open('ambiguous_nouns', 'r') as f:
 		ambiguous_nouns = f.read().split('\n')
 	
 	ambiguous_nouns = [w.lower() for w in ambiguous_nouns]	
-	print ambiguous_nouns
 	message = """\nYour noun may be either a 'de' or a 'het' word. Chosing one or the
 other may change the meaning of '{0}'. When in doubt, advice a dictionary.
 	"""
