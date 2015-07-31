@@ -1,5 +1,5 @@
 # de_or_het
-'De' or 'het? This function takes in a Dutch noun and returns the noun with the correct article.
+'De' or 'het'? This function takes in a Dutch noun and returns the noun with the correct article.
 
 De or het?
 One of the harderst things for Dutch language learners to get a grip on, is the article of a noun. 
